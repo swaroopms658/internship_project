@@ -1,8 +1,8 @@
-Hotel Booking Analytics with RAG
+# Hotel Booking Analytics with RAG
 
 This project implements a Retrieval-Augmented Generation (RAG) pipeline for analyzing hotel booking data using FAISS for similarity search and a transformer model for question answering.
 
-Project Structure
+# Project Structure
 
 data processing.py: Preprocesses hotel booking data, generates sentence embeddings, and stores them in a FAISS index.
 
@@ -16,7 +16,7 @@ main.py: Implements a FastAPI server to expose the RAG-based question-answering 
 
 rag.py: Handles retrieval from FAISS and answer generation using GPT-Neo.
 
-Setup
+# Setup
 
 1. Clone the Repository
 
@@ -39,7 +39,7 @@ uvicorn main:app --reload
 
 The API will be available at http://127.0.0.1:8000/.
 
-API Usage
+# API Usage
 
 Ask a Question
 
@@ -58,18 +58,11 @@ Response:
   "answer": "The most booked hotel is XYZ Hotel."
 }
 
-Evaluation
+# Evaluation
 
 Run evaluate_rag.py to measure model performance:
 
 python evaluate_rag.py
 
-Future Improvements
-
-Enhance retrieval with better embeddings.
-
-Improve response generation with more powerful models.
-
-Add support for multilingual queries.
-
+# M S SWAROOP
 
